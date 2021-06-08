@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* メディアクエリ
+------------------------------------------- */
+$break-points: (
+    'sm': "(max-width: 375px)",
+    'md': "(min-width: 376px) and (max-width: 768px)",
+    'lg': "(min-width: 769px)",
+) !default;
+
+@mixin mq($break-point: sm) {
+    @media #{map-get($break-points, $break-point)} {
+      @content;
+    }
+}

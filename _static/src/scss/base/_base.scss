@@ -1,0 +1,55 @@
+@charset "utf-8";
+@use "../global" as global;
+
+html { 
+    font-size: 62.5%;
+}
+
+body {
+    font-family: global.$font-family-awesome_jp;
+    font-size: global.$size-main;
+    line-height: 2;
+    color: global.$color-text_bk;
+    background: global.$color-bg;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    height: inherit;
+    color: global.$color-text_bk;
+    transition: all 0.5s ease 0s;
+}
+
+.inner {
+    width: calc(1100 / 1440 * 100%);
+    max-width: global.$layout-width-inner;
+    margin: 0 auto;
+
+    @include global.mq() {
+        width: calc(345 / 375 * 100%);
+        max-width: 345px;
+    }
+}
+
+._sp {
+    display: none;
+
+    @include global.mq() {
+        display: block;
+    }
+}
+
+._lg {
+    @include global.mq() {
+        display: none;
+    }
+}
