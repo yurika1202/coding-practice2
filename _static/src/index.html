@@ -13,7 +13,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -21,7 +20,7 @@
 <!-- header -->
 <header>
     <div class="header-logo">
-        <img src="./img/site-logo.svg" alt="DIGSMILE INC.のロゴ" class="logo">
+        <img src="./img/logo.png" alt="DIGSMILE INC.のロゴ">
     </div><!-- /.header-logo -->
 
     <div class="header-nav">
@@ -30,10 +29,119 @@
             <p>MENU</p>
         </button>
     </div><!-- /.nav-btn -->
+
+    <!-- nav-menu -->
+    <nav class="open-nav">
+        <div class="nav-logo">
+            <img src="./img/logo-sm.png" alt="DIGSMILE INC.のロゴ">
+        </div><!-- /.nav-logo -->
+        <ul class="nav-items">
+            <li class="nav-item"><a href="#about">ABOUT US</a></li>
+            <li class="nav-item"><a href="#works">WORKS</a></li>
+            <li class="nav-item"><a href="#curture">CULTURE</a></li>
+            <li class="nav-item"><a href="#topics">TOPICS</a></li>
+            <li class="nav-item"><a href="#contact">CONTACT</a></li>
+        </ul><!-- /.nav-items -->
+    </nav>
+    <div class="open-bg"></div>
 </header>
 
+<!-- fv -->
+<div class="fv">
+    <div class="fv-img"></div><!-- /.fv-img -->
+
+    <div class="fv-message">
+        <div class="fv-title">
+            <h1 class="fv-company">DIGSMILE INC.</h1>
+            <p class="fv-lead">デザインで人を笑顔にする会社</p>
+        </div><!-- /.fv-title -->
+
+        <p class="fv-text">DESIGN<br>FOR<br>SMILE.</p>
+    </div><!-- /.fv-message -->
+</div><!-- /.fv -->
+
+<main class="inner">
+
+    <!-- about -->
+    <section class="about" id="about">
+
+        <div class="about-contents">
+            <h2 class="section-title">ABOUT US</h2>
+            <p class="about-text">DIGSMILEは、デザインで人を笑顔にする会社。<br>なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>DIGSMILEの社名にはそんな想いが込められています。</p>
+            <a href="about.html" class="btn">READ MORE</a>
+        </div><!-- /.about-contents -->
+
+    </section><!-- /#about.about -->
+
+    <div class="gray-bg">
+
+        <!-- works -->
+        <section class="works" id="works">
+            <h2 class="section-title">WORKS</h2>
+            <div class="card-img">
+                <img src="./img/works.png" alt="実績イメージ" loading="lazy" decoding="async">
+            </div><!-- /.card-img -->
+            <p class="card-text">DIGSMILEの制作実績を紹介します。</p>
+            <a href="#" class="btn">READ MORE</a>
+        </section><!-- /#works.works -->
+
+        <!-- culture -->
+        <section class="culture" id="culture">
+            <h2 class="section-title">CULTURE</h2>
+            <div class="card-img">
+                <img src="./img/culture.png" alt="社内文化イメージ" loading="lazy" decoding="async">
+            </div><!-- /.card-img -->
+            <p class="card-text">DIGSMILEの社内文化について紹介します。</p>
+            <a href="#" class="btn">READ MORE</a>
+        </section><!-- /#culture.culture -->
+
+    </div><!-- /.gray-bg -->
+
+    <!-- topics -->
+    <section class="topics" id="topics">
+        <h2 class="section-title">LATEST TOPICS</h2>
+
+        <div class="topics-contents">
+            <ul class="topics-items">
+                <li class="topics-item"><a href="#">
+                    <time datetime="2020-02-01">2020.02.01</time>
+                    <h3 class="topics-title">イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」</h3>
+                </a></li><!-- /.topics-item -->
+
+                <li class="topics-item"><a href="#">
+                    <time datetime="2020-01-18">2020.01.18</time>
+                    <h3 class="topics-title">プレスリリースのお知らせ DIGGIN’ RECORDS</h3>
+                </a></li><!-- /.topics-item -->
+
+                <li class="topics-item"><a href="#">
+                    <time datetime="2020-01-01">2020.01.01</time>
+                    <h3 class="topics-title">新年明けましておめでとうございます</h3>
+                </a></li><!-- /.topics-item -->
+            </ul><!-- /.topics-items -->
+
+            <a href="#" class="btn">READ MORE</a>
+        </div><!-- /.topics-contents -->
+    </section><!-- /#topics.topics -->
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <div class="contact-contents">
+            <h2 class="section-title">CONTACT</h2>
+            <p class="contact-message">制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br>まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p><!-- /.contact-message -->
+            <a href="contact.html" class="btn">READ MORE</a>
+        </div><!-- /.contact-contents -->
+
+        <div class="contact-img">
+            <img src="./img/contact.png" alt="コンタクイメージ"loading="lazy" decoding="async">
+        </div><!-- /.contact-img -->
+    </section><!-- /#contact.contact -->
+</main>
+
+<!-- footer -->
+<footer>
+    <small>&copy; 2018 DIGSMILE INC.</small>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 </body>
-</html>
