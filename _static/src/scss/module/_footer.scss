@@ -1,0 +1,15 @@
+@charset "utf-8";
+@use "../global" as global;
+
+/* footer
+---------------------------------- */
+.footer {
+    background: global.$color-accent;
+    padding: 1.8rem 0 1.8rem;
+    text-align: center;
+}
+
+.footer__copy {
+    color: global.$color-text_wh;
+    font: 1rem global.$font-family-awesome_en;
+}

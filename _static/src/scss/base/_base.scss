@@ -34,9 +34,13 @@ a {
     max-width: global.$layout-width-inner;
     margin: 0 auto;
 
+    @include global.mq(md) {
+        width: calc(708 / 768 * 100%);
+        margin-right: auto;
+    }
+
     @include global.mq() {
         width: calc(345 / 375 * 100%);
-        max-width: 345px;
     }
 }
 
@@ -52,4 +56,9 @@ a {
     @include global.mq() {
         display: none;
     }
+}
+
+.section__title {
+    font: 800 3.2rem global.$font-family-awesome_en;
+    letter-spacing: 0.068em;
 }

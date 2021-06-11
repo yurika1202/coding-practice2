@@ -3,9 +3,9 @@
 /* メディアクエリ
 ------------------------------------------- */
 $break-points: (
-    'sm': "(max-width: 375px)",
-    'md': "(min-width: 376px) and (max-width: 768px)",
-    'lg': "(min-width: 769px)",
+    'sm': "(max-width: 767px)",
+    'md': "(min-width: 768px) and (max-width: 1023px)",
+    'lg': "(min-width: 1024px)",
 ) !default;
 
 @mixin mq($break-point: sm) {

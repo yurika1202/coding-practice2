@@ -90,4 +90,15 @@ a {
 
 /* btn
 ---------------------------------------- */
+/* header
+------------------------------------ */
+.header {
+  background: #000;
+  width: 100vw;
+  height: 8.8rem;
+}
+
+.open__nav {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

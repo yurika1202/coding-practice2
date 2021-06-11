@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@use "../../../global" as global;
+
+/* index-fv
+------------------------------------ */
+.fv {
+    width: 100%;
+    height: 74rem;
+    background: linear-gradient(90deg, transparent 0%, transparent 46%, global.$color-main 46%, global.$color-main 100%);
+    position: relative;
+
+    @include global.mq(md) {
+        height: 102.4rem;
+        background: linear-gradient(90deg, transparent 0%, transparent 27%, global.$color-main 27%, global.$color-main 100%);
+    }
+
+    @include global.mq() {
+        height: 66.7rem;
+        background: linear-gradient(90deg, transparent 0%, transparent 20%, global.$color-main 20%, global.$color-main 100%);
+    }
+}
+
+.fv__img {
+    width: calc(1110 / 1440 * 100%);
+    height: calc(640 / 780 * 100%);
+    background: url(/img/fv.png) no-repeat center center / cover;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.34);
+    }
+
+    @include global.mq(md) {
+        width: calc(600 / 768 * 100%);
+        height: calc(890 / 1024 * 100%);
+    }
+}
+
+.fv__message {
+    position: absolute;
+    top: 50%;
+    right: 12.5%;
+    transform: translateY(-50%);
+    color: global.$color-text_wh;
+
+    @include global.mq(md) {
+        top: 40%;
+    }
+
+    @include global.mq() {
+        top: 42%;
+        right: 6.5%;    
+    }
+}
+
+.fv__title {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.fv__company {
+    font: 800 2rem global.$font-family-awesome_en;
+
+    @include global.mq(md) {
+        font-size: 1.6rem;
+    }
+
+    @include global.mq() {
+        font-size: 1.6rem;
+    }
+}
+
+.fv__lead {
+    font: bold 2rem global.$font-family-awesome_jp;
+
+    @include global.mq(md) {
+        font-size: 1.6rem;
+    }
+
+    @include global.mq() {
+        font-size: 1.6rem;
+    }
+}
+
+.fv__text {
+    font: 800 7.2rem global.$font-family-awesome_en;
+    margin-top: 1rem;
+
+    @include global.mq(md) {
+        font-size: 5.6rem;
+    }
+
+    @include global.mq() {
+        font-size: 5.6rem;
+    }
+}

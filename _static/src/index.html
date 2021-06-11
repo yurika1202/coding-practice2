@@ -13,133 +13,149 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+
 </head>
 
 <body>
 <!-- header -->
-<header>
-    <div class="header-logo">
-        <img src="./img/logo.png" alt="DIGSMILE INC.のロゴ">
-    </div><!-- /.header-logo -->
+<header class="header">
 
-    <div class="header-nav">
-        <button class="nav-btn">
-            <span></span><span></span><span></span>
-            <p>MENU</p>
-        </button>
-    </div><!-- /.nav-btn -->
+    <div class="header__inner">
+        <div class="header__logo">
+            <img src="./img/logo.png" alt="DIGSMILE INC.のロゴ">
+        </div><!-- /.header__logo -->
+    
+        <div class="header__nav">
+            <button class="nav__btn">
+                <span></span><span></span><span></span>
+                <p>MENU</p>
+            </button>
+        </div><!-- /.nav__btn -->
+    </div><!-- /.header__inner -->
 
-    <!-- nav-menu -->
-    <nav class="open-nav">
-        <div class="nav-logo">
-            <img src="./img/logo-sm.png" alt="DIGSMILE INC.のロゴ">
-        </div><!-- /.nav-logo -->
-        <ul class="nav-items">
-            <li class="nav-item"><a href="#about">ABOUT US</a></li>
-            <li class="nav-item"><a href="#works">WORKS</a></li>
-            <li class="nav-item"><a href="#curture">CULTURE</a></li>
-            <li class="nav-item"><a href="#topics">TOPICS</a></li>
-            <li class="nav-item"><a href="#contact">CONTACT</a></li>
-        </ul><!-- /.nav-items -->
+    <!-- nav__menu -->
+    <nav class="open__nav">
+
+        <div class="nav__wrapper">
+            <div class="nav__logo">
+                <img src="./img/logo-sm.png" alt="DIGSMILE INC.のロゴ">
+            </div><!-- /.nav__logo -->
+
+            <ul class="nav__items">
+                <li class="nav__item"><a href="#about">ABOUT US</a></li>
+                <li class="nav__item"><a href="#works">WORKS</a></li>
+                <li class="nav__item"><a href="#curture">CULTURE</a></li>
+                <li class="nav__item"><a href="#topics">TOPICS</a></li>
+                <li class="nav__item"><a href="#contact">CONTACT</a></li>
+            </ul><!-- /.nav__items -->
+        </div><!-- /.nav__wrapper -->
+        
     </nav>
-    <div class="open-bg"></div>
+
+    <div class="open__bg"></div>
 </header>
 
 <!-- fv -->
 <div class="fv">
-    <div class="fv-img"></div><!-- /.fv-img -->
+    <div class="fv__img"></div><!-- /.fv__img -->
 
-    <div class="fv-message">
-        <div class="fv-title">
-            <h1 class="fv-company">DIGSMILE INC.</h1>
-            <p class="fv-lead">デザインで人を笑顔にする会社</p>
-        </div><!-- /.fv-title -->
+    <div class="fv__message">
+        <div class="fv__title">
+            <h1 class="fv__company">DIGSMILE INC.</h1>
+            <p class="fv__lead">デザインで人を笑顔にする会社</p>
+        </div><!-- /.fv__title -->
 
-        <p class="fv-text">DESIGN<br>FOR<br>SMILE.</p>
-    </div><!-- /.fv-message -->
+        <p class="fv__text">DESIGN<br>FOR<br>SMILE.</p>
+    </div><!-- /.fv__message -->
 </div><!-- /.fv -->
 
-<main class="inner">
+<main>
 
-    <!-- about -->
-    <section class="about" id="about">
+    <div class="gray__bg">
 
-        <div class="about-contents">
-            <h2 class="section-title">ABOUT US</h2>
-            <p class="about-text">DIGSMILEは、デザインで人を笑顔にする会社。<br>なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>DIGSMILEの社名にはそんな想いが込められています。</p>
-            <a href="about.html" class="btn">READ MORE</a>
-        </div><!-- /.about-contents -->
+        <!-- about -->
+        <section class="about inner" id="about">
 
-    </section><!-- /#about.about -->
+            <div class="about__contents">
+                <h2 class="section__title">ABOUT US</h2>
+                <p class="about__text">DIGSMILEは、デザインで人を笑顔にする会社。<br>なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>DIGSMILEの社名にはそんな想いが込められています。</p>
+                <a href="about.html" class="btn _about"><span>READ MORE</span></a>
+            </div><!-- /.about__contents -->
 
-    <div class="gray-bg">
+        </section><!-- /#about.about -->
 
-        <!-- works -->
-        <section class="works" id="works">
-            <h2 class="section-title">WORKS</h2>
-            <div class="card-img">
-                <img src="./img/works.png" alt="実績イメージ" loading="lazy" decoding="async">
-            </div><!-- /.card-img -->
-            <p class="card-text">DIGSMILEの制作実績を紹介します。</p>
-            <a href="#" class="btn">READ MORE</a>
-        </section><!-- /#works.works -->
+        <div class="works-culture__wrapper inner">
+            <!-- works -->
+            <section class="works" id="works">
+                <h2 class="section__title">WORKS</h2>
+                <div class="card__img">
+                    <img src="./img/works.png" alt="実績イメージ" loading="lazy" decoding="async">
+                </div><!-- /.card__img -->
+                <p class="card__text">DIGSMILEの制作実績を紹介します。</p>
+                <a href="#" class="btn _card"><span>READ MORE</span></a>
+            </section><!-- /#works.works -->
 
-        <!-- culture -->
-        <section class="culture" id="culture">
-            <h2 class="section-title">CULTURE</h2>
-            <div class="card-img">
-                <img src="./img/culture.png" alt="社内文化イメージ" loading="lazy" decoding="async">
-            </div><!-- /.card-img -->
-            <p class="card-text">DIGSMILEの社内文化について紹介します。</p>
-            <a href="#" class="btn">READ MORE</a>
-        </section><!-- /#culture.culture -->
+            <!-- culture -->
+            <section class="culture" id="culture">
+                <h2 class="section__title">CULTURE</h2>
+                <div class="card__img">
+                    <img src="./img/culture.png" alt="社内文化イメージ" loading="lazy" decoding="async">
+                </div><!-- /.card__img -->
+                <p class="card__text">DIGSMILEの社内文化について紹介します。</p>
+                <a href="#" class="btn _card"><span>READ MORE</span></a>
+            </section><!-- /#culture.culture -->
+        </div><!-- /.works-culture__wrapper -->
 
     </div><!-- /.gray-bg -->
 
     <!-- topics -->
-    <section class="topics" id="topics">
-        <h2 class="section-title">LATEST TOPICS</h2>
+    <section class="topics inner" id="topics">
+        <h2 class="section__title">LATEST TOPICS</h2>
 
-        <div class="topics-contents">
-            <ul class="topics-items">
-                <li class="topics-item"><a href="#">
-                    <time datetime="2020-02-01">2020.02.01</time>
-                    <h3 class="topics-title">イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」</h3>
-                </a></li><!-- /.topics-item -->
+        <div class="topics__contents">
+            <ul class="topics__items">
+                <li class="topics__item"><a href="#">
+                    <time class="topics__time" datetime="2020-02-01">2020.02.01</time>
+                    <h3 class="topics__title">イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」</h3>
+                </a></li><!-- /.topics__item -->
 
-                <li class="topics-item"><a href="#">
-                    <time datetime="2020-01-18">2020.01.18</time>
-                    <h3 class="topics-title">プレスリリースのお知らせ DIGGIN’ RECORDS</h3>
-                </a></li><!-- /.topics-item -->
+                <li class="topics__item"><a href="#">
+                    <time class="topics__time" datetime="2020-01-18">2020.01.18</time>
+                    <h3 class="topics__title">プレスリリースのお知らせ DIGGIN’ RECORDS</h3>
+                </a></li><!-- /.topics__item -->
 
-                <li class="topics-item"><a href="#">
-                    <time datetime="2020-01-01">2020.01.01</time>
-                    <h3 class="topics-title">新年明けましておめでとうございます</h3>
-                </a></li><!-- /.topics-item -->
-            </ul><!-- /.topics-items -->
+                <li class="topics__item"><a href="#">
+                    <time class="topics__time" datetime="2020-01-01">2020.01.01</time>
+                    <h3 class="topics__title">新年明けましておめでとうございます</h3>
+                </a></li><!-- /.topics__item -->
+            </ul><!-- /.topics__items -->
 
-            <a href="#" class="btn">READ MORE</a>
-        </div><!-- /.topics-contents -->
+            <a href="#" class="btn _topics"><span>READ MORE</span></a>
+        </div><!-- /.topics__contents -->
     </section><!-- /#topics.topics -->
 
     <!-- contact -->
     <section class="contact" id="contact">
-        <div class="contact-contents">
-            <h2 class="section-title">CONTACT</h2>
-            <p class="contact-message">制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br>まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p><!-- /.contact-message -->
-            <a href="contact.html" class="btn">READ MORE</a>
-        </div><!-- /.contact-contents -->
 
-        <div class="contact-img">
-            <img src="./img/contact.png" alt="コンタクイメージ"loading="lazy" decoding="async">
-        </div><!-- /.contact-img -->
+        <div class="contact__wrapper inner">
+            <div class="contact__contents">
+                <h2 class="section__title">CONTACT</h2>
+                <p class="contact__message">制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br>まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p>
+                <a href="contact.html" class="btn _contact"><span>READ MORE</span></a>
+            </div><!-- /.contact__contents -->
+    
+            <div class="contact__img">
+                <img src="./img/contact.png" alt="コンタクイメージ"loading="lazy" decoding="async">
+            </div><!-- /.contact__img -->
+        </div><!-- /.contact__wrapper -->
     </section><!-- /#contact.contact -->
 </main>
 
 <!-- footer -->
-<footer>
-    <small>&copy; 2018 DIGSMILE INC.</small>
+<footer class="footer">
+    <small class="footer__copy">&copy; 2018 DIGSMILE INC.</small>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
