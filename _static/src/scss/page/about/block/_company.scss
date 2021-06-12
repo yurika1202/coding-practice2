@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@use "../../../global" as global;
+
+/* company
+-------------------------------------- */
+.company {
+    margin: 12rem 0;
+
+    @include global.mq(md) {
+        margin: 8rem 0;
+    }
+
+    @include global.mq() {
+        margin: 8rem 0;
+    }
+}
+
+.section__title {
+    &._company {
+        padding-bottom: 3rem;
+        border-bottom: 1px solid #DDDDDD;
+    }
+}
+
+.company__table {
+    width: calc(800 / 1100 * 100%);
+    border-collapse: collapse;
+    margin-left: auto;
+
+    tr {
+        border-bottom: 1px solid #DDDDDD;
+        text-align: left;
+    }
+
+    th {
+        font-weight: bold;
+        padding: 1.7rem 0 1.8rem;
+        width: 14.4rem;
+
+        @include global.mq() {
+            font-weight: normal;
+            font-size: 1.4rem;
+            padding: 2.1rem 0 2rem;
+        }
+    }
+
+    td {
+        @include global.mq() {
+            font-size: 1.4rem;
+        }
+    }
+
+    @include global.mq(md) {
+        width: calc(678 / 708 * 100%);
+    }
+
+    @include global.mq() {
+        width: 100%;
+    }
+}
+
+.contact__map {
+    margin-top: 4rem;
+    width: 100%;
+
+    iframe {
+        width: 100%;
+    }
+}

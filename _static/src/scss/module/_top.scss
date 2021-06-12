@@ -1,0 +1,70 @@
+@charset "utf-8";
+@use "../global" as global;
+
+/* top
+----------------------------------- */
+.top {
+    width: 100%;
+    height: 46.4rem;
+    background: linear-gradient(90deg, transparent 0%, transparent 46%, global.$color-main 46%, global.$color-main 100%);
+    position: relative;
+
+    @include global.mq(md) {
+        height: 61.5rem;
+    }
+
+    @include global.mq() {
+        height: 44.9rem;
+
+    }
+}
+
+.top__img {
+    width: calc(1110 / 1440 * 100%);
+    height: calc(640 / 780 * 100%);
+    background: url(/img/about-top.png) no-repeat center center / cover;
+    position: relative;
+}
+
+.top__message {
+    position: absolute;
+    top: 50%;
+    right: 12.5%;
+    transform: translateY(-50%);
+    color: global.$color-text_wh;
+
+    @include global.mq(md) {
+        top: 40%;
+    }
+
+    @include global.mq() {
+        top: 40%;
+        right: 5%;
+    }
+}
+
+.top__title {
+    font: 800 7.2rem global.$font-family-awesome_en;
+    letter-spacing: 0.063em;
+
+    @include global.mq(md) {
+        font-size: 5.2rem;
+    }
+
+    @include global.mq() {
+        font-size: 5.2rem;
+    }
+}
+
+.top__lead {
+    font-size: 2rem;
+    letter-spacing: 0.005em;
+
+    @include global.mq(md) {
+        font-size: 1.6rem;
+    }
+
+    @include global.mq() {
+        font-size: 1.6rem;
+    }
+}

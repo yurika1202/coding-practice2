@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@use "../../../global" as global;
+
+/* vision
+---------------------------------- */
+.vision {
+    margin: 12rem 0 0 22.6rem;
+    width: calc(874 / 1100 * 100%);
+
+    @include global.mq(md) {
+        margin: 8rem auto 0;
+        width: calc(468 / 768 * 100%);
+    }
+
+    @include global.mq() {
+        margin: 8rem auto 0;
+        width: 100%;
+    }
+}
+
+.vision__lead {
+    margin-top: 2.7rem;
+    font: bold 2.4rem global.$font-family-awesome_jp;
+}
+
+.vision__text {
+    margin-top: 2.5rem;
+
+    span {
+        padding-top: 1em;
+    }
+
+    @include global.mq(md) {
+        font-size: 1.4rem;
+    }
+
+    @include global.mq() {
+        font-size: 1.4rem;
+    }
+}
+

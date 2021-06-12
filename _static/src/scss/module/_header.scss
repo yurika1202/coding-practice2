@@ -30,10 +30,6 @@
 
 .header__logo {
     width: 18.9rem;
-
-    img {
-        vertical-align: middle;
-    }
 }
 
 .nav__btn {
@@ -98,7 +94,7 @@
     background: rgba(global.$color-main, 0.95);
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -200%;
     z-index: 100;
     transition: all ease 0.5s;
 
