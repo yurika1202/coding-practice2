@@ -1,0 +1,346 @@
+@charset "UTF-8";
+@use "../../../global" as global;
+
+/* contact
+----------------------------------- */
+.contact__contents {
+    width: calc(700 / 1100 * 100%);
+    margin: 12rem auto;
+
+    @include global.mq(md) {
+        width: calc(668 / 708 * 100%);
+        margin: 13.5rem auto;
+    }
+
+    @include global.mq() {
+        width: 100%;
+        margin: 8rem 0;
+    }
+}
+
+.contact__message {
+    @include global.mq() {
+        font-size: 1.4rem;
+    }
+}
+
+/* form
+---------------------------------- */
+.contact__form {
+    margin-top: 5.2rem;
+
+    @include global.mq(md) {
+        margin-top: 1.8rem;
+    }
+
+    @include global.mq() {
+        margin-top: 4.8rem;
+    }
+}
+
+.form__item {
+    &:not(:first-child) {
+        margin-top: 4.2rem;
+
+        @include global.mq(md) {
+            margin-top: 3.5rem;
+        }
+
+        @include global.mq() {
+            margin-top: 3.7rem;
+        }
+    }
+
+    &._check {
+        margin-top: 4.2rem;
+        text-align: center;
+
+        @include global.mq(md) {
+            margin-top: 3.5rem;
+        }        
+    }
+}
+
+.contact__label {
+    label {
+        padding-right: 5.4rem;
+        position: relative;
+
+        @include global.mq() {
+            font-weight: bold;
+        }
+    }
+}
+
+._must {
+    &::after {
+        content: '必須';
+        background: global.$color-main;
+        font-size: 1.2rem;
+        color: global.$color-text_wh;
+        padding: 0.1rem 0.5rem;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+/* radio
+--------------------------- */
+.contact__select {
+    display: flex;
+    margin-top: 1.8rem;
+
+    @include global.mq() {
+        display: block;
+    }
+}
+
+.select__item {
+    position: relative;
+    padding-left: 3rem;
+
+    &:not(:first-child) {
+        margin-left: 5rem;
+
+        @include global.mq() {
+            margin-left: 0;
+            margin-top: 1.4rem;
+        }
+    }
+}
+
+.select__label {
+    input[type="radio"] {
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        opacity: 0;
+
+        &:checked + .select__item_parts {
+            &::after {
+                content: '';
+                // チェックマークスタイル
+                width: 1.2rem;
+                height: 1.2rem;
+                position: absolute;
+                top: 50%;
+                left: 5px;
+                transform: translateY(-50%);
+                background: global.$color-main;
+                border-radius: 999px;
+                opacity: 1;
+            }
+        }
+
+        &:focus + .select__item_parts {
+            &::before {
+                content: "";
+                box-shadow: 0px 0px 8px 0px global.$color-text_bk;
+            }
+        }
+    }
+}
+
+.select__item_parts {
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid global.$color-text_bk;
+        border-radius: 999px;
+    }
+
+    &::after {
+        content: '';
+        transition: 0.3s;
+        opacity: 0;
+    }
+
+    &:hover {
+        &::before {
+            content: "";
+            // ホバースタイル
+        }
+    }
+}
+
+/* input
+-------------------------- */
+.contact__input {
+    margin-top: 0.9rem;
+
+    input {
+        width: 100%;
+        height: 4.1rem;
+        transition: .3s;
+        
+        &:focus {
+            box-shadow: 0px 0px 8px 0px global.$color-text_bk;
+        }
+
+        @include global.mq() {
+            height: 4.8rem;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        height: 21.2rem;
+        resize: vertical;
+        transition: .3s;
+        
+        &:focus {
+            box-shadow: 0px 0px 8px 0px global.$color-text_bk;
+        }
+    }
+}
+
+/* privacy
+-------------------------- */
+.privacy__label {
+    margin-top: 4rem;
+    font: 800 1.6rem global.$font-family-awesome_en;
+    letter-spacing: 0.004em;
+}
+
+.privacy__contents {
+    margin-top: 1rem;
+    border: 1px solid global.$color-text_bk;
+    padding: 1rem;
+    height: 25.2rem;
+    overflow: scroll;
+
+    p {
+        line-height: 1.5;
+    }
+
+    @include global.mq() {
+        height: 22.6rem;
+    }
+}
+
+.privacy__lists {
+    list-style: decimal inside;
+}
+
+.privacy__list {
+    margin-top: 1.6rem;
+}
+
+.privacy__list_title {
+    display: inline-block;
+}
+
+.privacy__message {
+    margin-top: 1.6rem;
+}
+
+.check__label {
+    padding-left: 3rem;
+    position: relative;
+
+    input[type="checkbox"] {
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        opacity: 0;
+
+        &:checked + .check__item_parts {
+            &::after {
+                content: '';
+                width: 0.5rem;
+                height: 1.2rem;
+                border-bottom: 1px solid global.$color-main;
+                border-right: 1px solid global.$color-main;
+                position: absolute;
+                top: 10%;
+                left: 2%;
+                transform: rotate(45deg);
+                opacity: 1;
+            }
+
+            @include global.mq() {
+                &::after {
+                    content: '';
+                    width: 0.3rem;
+                    height: 1rem;
+                }
+            }
+        }
+    
+        &:focus + .check__item_parts {
+            &::before {
+                content: '';
+                box-shadow: 0px 0px 8px 0px global.$color-text_bk;
+            }
+        }
+    }
+
+    @include global.mq() {
+        padding-left: 2.6rem;
+        font-size: 1.3rem;
+    }
+}
+
+.check__item_parts {
+    &::before {
+        content: '';
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid global.$color-main;
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    &::after {
+        content: '';
+        width: 0.8rem;
+        height: 1.2rem;
+        opacity: 0;
+        transition: .3s;
+    }
+
+    @include global.mq() {
+        &::before {
+            content: '';
+            width: 1.6rem;
+            height: 1.6rem;    
+        }
+    }
+}
+
+/* submit
+---------------------- */
+
+.form__item_btn {
+    text-align: center;
+}
+
+.btn {
+    &._contact {
+        display: inline-block;
+        color: global.$color-text_wh;
+        transition: .5s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}

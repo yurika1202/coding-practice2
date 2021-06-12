@@ -22,8 +22,15 @@
 .top__img {
     width: calc(1110 / 1440 * 100%);
     height: calc(640 / 780 * 100%);
-    background: url(/img/about-top.png) no-repeat center center / cover;
     position: relative;
+
+    &._about {
+        background: url(/img/about-top.png) no-repeat center center / cover;
+    }
+
+    &._contact {
+        background: url(/img/contact-top.png) no-repeat center center / cover;
+    }
 }
 
 .top__message {
