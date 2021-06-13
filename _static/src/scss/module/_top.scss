@@ -26,11 +26,11 @@
     position: relative;
 
     &._about {
-        background: url(/img/about-top.png) no-repeat center center / cover;
+        background: url(../img/about-top.png) no-repeat center center / cover;
     }
 
     &._contact {
-        background: url(/img/contact-top.png) no-repeat center center / cover;
+        background: url(../img/contact-top.png) no-repeat center center / cover;
     }
 
     @include global.mq(md) {
