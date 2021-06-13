@@ -29,7 +29,21 @@
 }
 
 .header__logo {
-    width: 18.9rem;
+    width: 26rem;
+    transition: .5s;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.3;
+    }
+
+    @include global.mq(md) {
+        width: 19rem;
+    }
+
+    @include global.mq() {
+        width: 19rem;
+    }
 }
 
 .nav__btn {
@@ -38,7 +52,9 @@
     color: global.$color-text_wh;
     padding: 0 0 0 2.9rem;
     position: relative;
+    top: -0.3rem;
     z-index: 110;
+    cursor: pointer;
 
     span {
         width: 2.2rem;
@@ -50,7 +66,7 @@
         transition: all ease 0.5s;
 
         &:nth-of-type(1) {
-            top: 0.08rem;
+            top: 0.05rem;
         }
 
         &:nth-of-type(2) {
@@ -109,13 +125,13 @@
 
 .nav__wrapper {
     position: absolute;
-    top: 50%;
+    top: 16%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 }
 
 .nav__logo {
-    width: 5.2rem;
+    width: 5.7rem;
     margin: 0 auto;
 
     img {
@@ -125,7 +141,7 @@
 
 .nav__items {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
 }
 
 .nav__item {
@@ -134,10 +150,14 @@
         font: 800 2rem global.$font-family-awesome_en;
         color: global.$color-text_wh;
         letter-spacing: 0.068em;
+
+        &:hover {
+            opacity: 0.5;
+        }
     }
 
     &:not(:first-child) {
-        margin-top: 3rem;
+        margin-top: 2.3rem;
     }
 }
 

@@ -3,7 +3,7 @@
 
 /* contact
 ----------------------------------- */
-.contact__contents {
+.form__contents {
     width: calc(700 / 1100 * 100%);
     margin: 12rem auto;
 
@@ -19,6 +19,7 @@
 }
 
 .contact__message {
+    line-height: 1.5;
     @include global.mq() {
         font-size: 1.4rem;
     }
@@ -40,30 +41,42 @@
 
 .form__item {
     &:not(:first-child) {
-        margin-top: 4.2rem;
+        margin-top: 3.3rem;
 
         @include global.mq(md) {
             margin-top: 3.5rem;
         }
 
         @include global.mq() {
-            margin-top: 3.7rem;
+            margin-top: 3rem;
         }
     }
 
     &._check {
-        margin-top: 4.2rem;
+        margin-top: 3.8rem;
         text-align: center;
 
         @include global.mq(md) {
             margin-top: 3.5rem;
         }        
+
+        @include global.mq() {
+            margin-top: 3.5rem;
+        }
+    }
+
+    &._text {
+        margin-top: 4.5rem;
+
+        @include global.mq() {
+            margin-top: 4.2rem;
+        }
     }
 }
 
 .contact__label {
     label {
-        padding-right: 5.4rem;
+        padding-right: 4.5rem;
         position: relative;
 
         @include global.mq() {
@@ -78,7 +91,8 @@
         background: global.$color-main;
         font-size: 1.2rem;
         color: global.$color-text_wh;
-        padding: 0.1rem 0.5rem;
+        line-height: 1;
+        padding: 0.3rem 0.5rem;
         position: absolute;
         top: 50%;
         right: 0;
@@ -90,7 +104,7 @@
 --------------------------- */
 .contact__select {
     display: flex;
-    margin-top: 1.8rem;
+    margin-top: 1rem;
 
     @include global.mq() {
         display: block;
@@ -101,12 +115,16 @@
     position: relative;
     padding-left: 3rem;
 
+    &:first-child {
+        margin-left: 1rem;
+    }
+
     &:not(:first-child) {
         margin-left: 5rem;
 
         @include global.mq() {
-            margin-left: 0;
-            margin-top: 1.4rem;
+            margin-left: 1rem;
+            margin-top: 0.2rem;
         }
     }
 }
@@ -114,8 +132,8 @@
 .select__label {
     input[type="radio"] {
         position: absolute;
-        width: 2rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
         margin: 0;
         top: 50%;
         left: 0;
@@ -130,7 +148,7 @@
                 height: 1.2rem;
                 position: absolute;
                 top: 50%;
-                left: 5px;
+                left: 3.5px;
                 transform: translateY(-50%);
                 background: global.$color-main;
                 border-radius: 999px;
@@ -154,8 +172,8 @@
         top: 50%;
         left: 0;
         transform: translateY(-50%);
-        width: 2rem;
-        height: 2rem;
+        width: 1.7rem;
+        height: 1.7rem;
         border: 1px solid global.$color-text_bk;
         border-radius: 999px;
     }
@@ -177,7 +195,7 @@
 /* input
 -------------------------- */
 .contact__input {
-    margin-top: 0.9rem;
+    margin-top: 0.3rem;
 
     input {
         width: 100%;
@@ -203,14 +221,22 @@
             box-shadow: 0px 0px 8px 0px global.$color-text_bk;
         }
     }
+
+    @include global.mq() {
+        margin-top: 0.2rem;
+    }
 }
 
 /* privacy
 -------------------------- */
 .privacy__label {
-    margin-top: 4rem;
+    margin-top: 3rem;
     font: 800 1.6rem global.$font-family-awesome_en;
     letter-spacing: 0.004em;
+
+    @include global.mq() {
+        margin-top: 2.5rem;
+    }
 }
 
 .privacy__contents {
@@ -278,6 +304,8 @@
                     content: '';
                     width: 0.3rem;
                     height: 1rem;
+                    top: 7%;
+                    left: 1.4%;
                 }
             }
         }
@@ -291,7 +319,7 @@
     }
 
     @include global.mq() {
-        padding-left: 2.6rem;
+        padding-left: 3.2rem;
         font-size: 1.3rem;
     }
 }
@@ -299,8 +327,8 @@
 .check__item_parts {
     &::before {
         content: '';
-        width: 2rem;
-        height: 2rem;
+        width: 1.8rem;
+        height: 1.8rem;
         border: 1px solid global.$color-main;
         position: absolute;
         position: absolute;
@@ -320,8 +348,8 @@
     @include global.mq() {
         &::before {
             content: '';
-            width: 1.6rem;
-            height: 1.6rem;    
+            width: 1.4rem;
+            height: 1.4rem;    
         }
     }
 }
@@ -331,6 +359,10 @@
 
 .form__item_btn {
     text-align: center;
+
+    @include global.mq() {
+        margin-top: 2.4rem;
+    }
 }
 
 .btn {

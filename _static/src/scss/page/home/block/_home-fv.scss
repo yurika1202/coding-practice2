@@ -16,13 +16,13 @@
 
     @include global.mq() {
         height: 66.7rem;
-        background: linear-gradient(90deg, transparent 0%, transparent 20%, global.$color-main 20%, global.$color-main 100%);
+        background: linear-gradient(90deg, transparent 0%, transparent 25%, global.$color-main 25%, global.$color-main 100%);
     }
 }
 
 .fv__img {
-    width: calc(1110 / 1440 * 100%);
-    height: calc(640 / 780 * 100%);
+    width: calc(1100 / 1440 * 100%);
+    height: calc(673 / 780 * 100%);
     background: url(/img/fv.png) no-repeat center center / cover;
     position: relative;
 
@@ -30,22 +30,26 @@
         width: calc(600 / 768 * 100%);
         height: calc(890 / 1024 * 100%);
     }
+
+    @include global.mq() {
+        height: calc(326 / 375 * 100%);
+    }
 }
 
 .fv__message {
     position: absolute;
-    top: 50%;
-    right: 12.5%;
-    transform: translateY(-50%);
+    top: 21%;
+    right: 13.5%;
     color: global.$color-text_wh;
 
     @include global.mq(md) {
-        top: 40%;
+        top: 32%;
+        right: 12.8%;
     }
 
     @include global.mq() {
-        top: 42%;
-        right: 6.5%;    
+        top: 26%;
+        right: 10%;    
     }
 }
 
@@ -84,9 +88,11 @@
 
     @include global.mq(md) {
         font-size: 5.6rem;
+        line-height: 1;
     }
 
     @include global.mq() {
         font-size: 5.6rem;
+        line-height: 1;
     }
 }

@@ -4,13 +4,13 @@
 /* ceo
 ------------------------------------ */
 .ceo {
-    margin-top: 12rem;
+    margin-top: 12.5rem;
     position: relative;
     padding-top: 15rem;
 
     @include global.mq(md) {
         margin-top: 8rem; 
-        padding-top: 12rem;
+        padding-top: 13rem;
     }
 
     @include global.mq() {
@@ -37,18 +37,18 @@
 }
 
 .ceo__message {
-    width: calc(770 / 1110 * 100%);
+    width: calc(780 / 1110 * 100%);
     background: global.$color-bg_gray2;
-    padding: 15rem 0;
+    padding: 11.5rem 0 9rem;
     margin-left: auto;
 
     @include global.mq(md) {
-        padding: 20% 4.1rem;
+        padding: 15% 4.4rem 9rem;
     }
 
     @include global.mq() {
         width: 100%;
-        padding: 12.6rem 2rem 17.8rem 2rem;
+        padding: 12.6rem 2rem 7.5rem 2rem;
     }
 }
 
@@ -68,7 +68,11 @@
 .ceo__text {
     margin-top: 3rem;
 
+    @include global.mq(md) {
+        line-height: 1.77;
+    }
     @include global.mq() {
         font-size: 1.4rem;
+        margin-top: 2.6rem;
     }
 }

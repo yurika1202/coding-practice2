@@ -44,6 +44,7 @@
 
 .about__text {
     margin-top: 3rem;
+    line-height: 1.5;
 
     @include global.mq() {
         font-size: 1.4rem;
@@ -52,7 +53,15 @@
 
 .btn {
     &._about {
-        margin-top: 3rem;
+        margin-top: 6.3rem;
+
+        @include global.mq(md) {
+            margin-top: 5.4rem;
+        }
+
+        @include global.mq() {
+            margin-top: 7.5rem;
+        }
     }
 }
 
@@ -66,6 +75,7 @@
     }
 
     @include global.mq() {
-        padding-bottom: 4rem;
+        background: linear-gradient(180deg, transparent 0%, transparent 10%, global.$color-bg_gray 10%, global.$color-bg_gray 100%);
+        padding-bottom: 3.8rem;
     }
 }

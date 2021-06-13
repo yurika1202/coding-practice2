@@ -5,23 +5,24 @@
 ----------------------------------- */
 .top {
     width: 100%;
-    height: 46.4rem;
+    height: 45rem;
     background: linear-gradient(90deg, transparent 0%, transparent 46%, global.$color-main 46%, global.$color-main 100%);
     position: relative;
 
     @include global.mq(md) {
         height: 61.5rem;
+        background: linear-gradient(90deg, transparent 0%, transparent 47%, global.$color-main 47%, global.$color-main 100%);
     }
 
     @include global.mq() {
-        height: 44.9rem;
-
+        height: 45rem;
+        background: linear-gradient(90deg, transparent 0%, transparent 47%, global.$color-main 47%, global.$color-main 100%);
     }
 }
 
 .top__img {
-    width: calc(1110 / 1440 * 100%);
-    height: calc(640 / 780 * 100%);
+    width: calc(1100 / 1440 * 100%);
+    height: calc(670 / 780 * 100%);
     position: relative;
 
     &._about {
@@ -31,21 +32,29 @@
     &._contact {
         background: url(/img/contact-top.png) no-repeat center center / cover;
     }
+
+    @include global.mq(md) {
+        width: calc(580 / 768 * 100%);
+    }
+
+    @include global.mq() {
+        height: calc(324 / 375 * 100%);
+    }
 }
 
 .top__message {
     position: absolute;
-    top: 50%;
-    right: 12.5%;
-    transform: translateY(-50%);
+    top: 35%;
+    right: 10%;
     color: global.$color-text_wh;
 
     @include global.mq(md) {
-        top: 40%;
+        top: 36%;
+        right: 12.5%;
     }
 
     @include global.mq() {
-        top: 40%;
+        top: 33%;
         right: 5%;
     }
 }

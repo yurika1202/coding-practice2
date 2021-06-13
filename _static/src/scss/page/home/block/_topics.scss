@@ -17,7 +17,12 @@
 
 .topics__contents {
     width: 70rem;
+    margin-top: 2rem;
     margin-left: auto;
+
+    @include global.mq(md) {
+        width: 71rem;
+    }
 
     @include global.mq() {
         width: 100%;
@@ -26,12 +31,29 @@
 
 .topics__item {
     border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 0.2rem;
     transition: 0.3s;
 
     a {
         &:hover {
             opacity: 0.3;
         }
+    }
+
+    &:not(:first-child) {
+        margin-top: 1.9rem;
+
+        @include global.mq() {
+            margin-top: 0.6rem;
+        }
+    }
+
+    @include global.mq(md) {
+        padding-bottom: 0.3rem;
+    }
+
+    @include global.mq() {
+        padding-bottom: 0.1rem;
     }
 }
 
